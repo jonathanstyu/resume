@@ -60,11 +60,11 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _reducer = __webpack_require__(229);
+	var _reducer = __webpack_require__(204);
 
 	var _redux = __webpack_require__(182);
 
-	var _reduxLogger = __webpack_require__(230);
+	var _reduxLogger = __webpack_require__(205);
 
 	var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
@@ -23173,7 +23173,7 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	var _footer = __webpack_require__(228);
+	var _footer = __webpack_require__(203);
 
 	var _footer2 = _interopRequireDefault(_footer);
 
@@ -23319,7 +23319,7 @@
 
 	var _sideProjects2 = _interopRequireDefault(_sideProjects);
 
-	var _workExperience = __webpack_require__(227);
+	var _workExperience = __webpack_require__(202);
 
 	var _workExperience2 = _interopRequireDefault(_workExperience);
 
@@ -23432,10 +23432,7 @@
 	  "category": "Side Project - iOS",
 	  "url": "https://itunes.apple.com/us/app/collegescan-college-scorecard/id1087108329",
 	  "repo": "https://github.com/jonathanstyu/collegeScan",
-<<<<<<< 99a5e821163c736a77416d6f8f693fc742e041a4
 	  "blogPost": "http://jonathanstyu.github.io/introducing-collegescan",
-=======
->>>>>>> Update to get gh pages working
 	  "img": "./images/cs-icon.png",
 	  "role": "Creator",
 	  "summary": "A way to browse, search, and star colleges using the US College Scorecard API",
@@ -23529,32 +23526,7 @@
 	exports.default = SideProject;
 
 /***/ },
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */,
-/* 213 */,
-/* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23697,7 +23669,7 @@
 	exports.default = WorkSchoolExperience;
 
 /***/ },
-/* 228 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23760,7 +23732,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 229 */
+/* 204 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23778,7 +23750,7 @@
 	};
 
 /***/ },
-/* 230 */
+/* 205 */
 /***/ function(module, exports) {
 
 	"use strict";
