@@ -23396,7 +23396,7 @@
 	  "title": "ScoutSpot",
 	  "category": "Side Project",
 	  "url": "https://scoutspot-73977.firebaseapp.com",
-	  "img": "../images/scoutspot_logo.png",
+	  "img": "./images/scoutspot_logo.png",
 	  "role": "Creator",
 	  "summary": "Write SQL queries without dealing with SQL",
 	  "keywords": ["SQL", "React", "Redux", "Firebase"]
@@ -23405,14 +23405,14 @@
 	  "category": "Side Project - iOS",
 	  "url": "https://itunes.apple.com/us/app/collegescan-college-scorecard/id1087108329",
 	  "repo": "https://github.com/jonathanstyu/collegeScan",
-	  "img": "../images/cs-icon.png",
+	  "img": "./images/cs-icon.png",
 	  "role": "Creator",
 	  "summary": "A way to browse, search, and star colleges using the US College Scorecard API",
 	  "keywords": ["AsyncDisplayKit", "Realm", "Swift 2.0", "UIKit", "REST API", "ObjectMapper"]
 	}, {
 	  "title": "HakkerJobs",
 	  "category": "Side Project - iOS",
-	  "img": "../images/hakkerjobs.jpg",
+	  "img": "./images/hakkerjobs.jpg",
 	  "url": "https://itunes.apple.com/us/app/hakkerjobs-hackernews-client/id1028168255",
 	  "role": "Creator",
 	  "summary": "Parses the HackerNews monthly Whos Hiring post so users can browse and save startup jobs",
@@ -23453,12 +23453,16 @@
 	              "p",
 	              null,
 	              _react2.default.createElement(
-	                "a",
-	                { href: project.url },
-	                project.title
-	              ),
-	              " || ",
-	              project.role
+	                "b",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: project.url },
+	                  project.title
+	                ),
+	                " || ",
+	                project.role
+	              )
 	            ),
 	            _react2.default.createElement(
 	              "p",
@@ -23658,17 +23662,18 @@
 	        "footer",
 	        null,
 	        _react2.default.createElement(
-	          "p",
+	          "small",
 	          null,
 	          _react2.default.createElement(
-	            "small",
+	            "p",
 	            null,
 	            "Hosted on GitHub Pages — Theme by ",
 	            _react2.default.createElement(
 	              "a",
 	              { href: "https://github.com/orderedlist" },
 	              "orderedlist"
-	            )
+	            ),
+	            ". For some reason, this blog is set up with React and Redux."
 	          )
 	        )
 	      );

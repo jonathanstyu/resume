@@ -4,7 +4,9 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <small>
+          <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>. For some reason, this blog is set up with React and Redux.</p>
+        </small>
       </footer>
     )
   }
