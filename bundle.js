@@ -60,18 +60,23 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _reducer = __webpack_require__(204);
+	var _reducer = __webpack_require__(229);
 
 	var _redux = __webpack_require__(182);
 
-	var _reduxLogger = __webpack_require__(205);
+	var _reduxLogger = __webpack_require__(230);
 
 	var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	// import {Typography} from 'typography'
+	// import doelgerTheme from 'typography-theme-doelger'
+
 	var loggerMiddleware = (0, _reduxLogger2.default)();
 	var store = (0, _redux.createStore)(_reducer.resumeApp, (0, _redux.applyMiddleware)(loggerMiddleware));
+	// const typography = new Typography(doelgerTheme);
+	// typography.injectStyles();
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRedux.Provider,
@@ -23168,7 +23173,7 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	var _footer = __webpack_require__(203);
+	var _footer = __webpack_require__(228);
 
 	var _footer2 = _interopRequireDefault(_footer);
 
@@ -23314,7 +23319,7 @@
 
 	var _sideProjects2 = _interopRequireDefault(_sideProjects);
 
-	var _workExperience = __webpack_require__(202);
+	var _workExperience = __webpack_require__(227);
 
 	var _workExperience2 = _interopRequireDefault(_workExperience);
 
@@ -23344,7 +23349,29 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'animated bounceInDown' },
+	          _react2.default.createElement(
+	            'a',
+	            { name: 'about', className: 'anchor', href: '#about' },
+	            _react2.default.createElement('span', { className: 'octicon octicon-link' })
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'About Me'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'In my previous life I was a business analyst at an ecommerce lingerie company called True&co, leveraging data and startup savvy to bring women everywhere a better fit. I reported on important aspects of the business while running the company\'s acquisition marketing programs for the first years. In my spare time, I programmed web and mobile apps.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'I like to learn (today, React Native!) and tap away at a computer.'
+	          ),
+	          _react2.default.createElement('hr', null),
 	          _react2.default.createElement(_sideProjects2.default, null),
+	          _react2.default.createElement('hr', null),
 	          _react2.default.createElement(_workExperience2.default, null)
 	        )
 	      );
@@ -23398,13 +23425,14 @@
 	  "url": "https://scoutspot-73977.firebaseapp.com",
 	  "img": "./images/scoutspot_logo.png",
 	  "role": "Creator",
-	  "summary": "Write SQL queries without dealing with SQL",
+	  "summary": "Write SQL queries without dealing with SQL. This is a client side JavaScript app. I used React and Redux with a crude Firebase backend",
 	  "keywords": ["SQL", "React", "Redux", "Firebase"]
 	}, {
 	  "title": "collegeScan",
 	  "category": "Side Project - iOS",
 	  "url": "https://itunes.apple.com/us/app/collegescan-college-scorecard/id1087108329",
 	  "repo": "https://github.com/jonathanstyu/collegeScan",
+	  "blogPost": "http://jonathanstyu.github.io/introducing-collegescan",
 	  "img": "./images/cs-icon.png",
 	  "role": "Creator",
 	  "summary": "A way to browse, search, and star colleges using the US College Scorecard API",
@@ -23414,9 +23442,19 @@
 	  "category": "Side Project - iOS",
 	  "img": "./images/hakkerjobs.jpg",
 	  "url": "https://itunes.apple.com/us/app/hakkerjobs-hackernews-client/id1028168255",
+	  "blogPost": "http://jonathanstyu.github.io/introducing-hakkerjobs",
 	  "role": "Creator",
-	  "summary": "Parses the HackerNews monthly Whos Hiring post so users can browse and save startup jobs",
+	  "summary": "Parses the HackerNews monthly Whos Hiring post so users can browse and save startup jobs. Written in Swift 2.0 with Realm managing the saved data. At the beginning I used UIKit, but eventually migrated to AsyncDisplayKit.",
 	  "keywords": ["AsyncDisplayKit", "Realm", "Swift 2.0", "UIKit", "REST API"]
+	}, {
+	  "title": "JumpShot 2",
+	  "category": "Side Project - iOS",
+	  "img": "./images/jumpshot2.png",
+	  "url": "https://github.com/jonathanstyu/jumpshot-1.5-swift",
+	  "blogPost": "http://jonathanstyu.github.io/introducing-jumpshot-1-5",
+	  "role": "Creator",
+	  "summary": "JumpShot 2 is a little iOS app that tracks game scores and records in pickup basketball games. This native app is a rebuild of a RubyMotion app that I wrote in 2013.",
+	  "keywords": ["Realm", "Swift 2.0", "UIKit"]
 	}];
 
 	var SideProject = function (_Component) {
@@ -23450,24 +23488,31 @@
 	            { key: idx },
 	            _react2.default.createElement("img", { src: project.img, style: { 'width': '100px' } }),
 	            _react2.default.createElement(
-	              "p",
+	              "h3",
 	              null,
-	              _react2.default.createElement(
-	                "b",
-	                null,
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: project.url },
-	                  project.title
-	                ),
-	                " || ",
-	                project.role
-	              )
+	              project.title,
+	              " || ",
+	              project.role
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
 	              project.summary
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              _react2.default.createElement(
+	                "a",
+	                { href: project.url },
+	                "See It"
+	              ),
+	              " || ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: project.blogPost },
+	                "Read the Blog Post"
+	              )
 	            )
 	          );
 	        })
@@ -23481,7 +23526,32 @@
 	exports.default = SideProject;
 
 /***/ },
-/* 202 */
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23516,7 +23586,7 @@
 	};
 
 	var work = [{
-	  "employer": "TrueandCo",
+	  "employer": "True&Co",
 	  "url": "https://trueandco.com/",
 	  "position": "Business Analyst",
 	  "start": "2013-08",
@@ -23548,7 +23618,7 @@
 	          "div",
 	          { key: idx },
 	          _react2.default.createElement(
-	            "p",
+	            "h3",
 	            null,
 	            _react2.default.createElement(
 	              "a",
@@ -23593,6 +23663,7 @@
 	          "Work Experience"
 	        ),
 	        compiledWorkHighlights,
+	        _react2.default.createElement("hr", null),
 	        _react2.default.createElement(
 	          "a",
 	          { name: "Education", className: "anchor", href: "#Education" },
@@ -23623,7 +23694,7 @@
 	exports.default = WorkSchoolExperience;
 
 /***/ },
-/* 203 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23686,7 +23757,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 204 */
+/* 229 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23704,7 +23775,7 @@
 	};
 
 /***/ },
-/* 205 */
+/* 230 */
 /***/ function(module, exports) {
 
 	"use strict";

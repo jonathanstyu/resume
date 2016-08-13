@@ -15,7 +15,7 @@ const education = {
 
 const work = [
   {
-    "employer": "TrueandCo",
+    "employer": "True&Co",
     "url": "https://trueandco.com/",
     "position": "Business Analyst",
     "start": "2013-08",
@@ -45,7 +45,7 @@ export default class WorkSchoolExperience extends Component {
     var compiledWorkHighlights = work.map(function (job, idx) {
       return (
         <div key={idx}>
-          <p><a href={job.url}>{job.employer}</a> || {job.position}</p>
+          <h3><a href={job.url}>{job.employer}</a> || {job.position}</h3>
           <p>{job.start} to {job.end}</p>
           <ul>
             {
@@ -65,6 +65,7 @@ export default class WorkSchoolExperience extends Component {
         <a name="Work Experience" className="anchor" href="#Work Experience"><span className="octicon octicon-link"></span></a>
         <h1>Work Experience</h1>
         {compiledWorkHighlights}
+        <hr />
         <a name="Education" className="anchor" href="#Education"><span className="octicon octicon-link"></span></a>
         <h1>Education</h1>
         <h3>University of California, Berkeley</h3>
