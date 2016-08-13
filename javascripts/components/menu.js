@@ -8,7 +8,7 @@ export default class Menu extends Component {
         <p>iOS/JavaScript/Python development, experiment-driven marketing, and business analysis</p>
         <p className="view"><a href="https://github.com/jonathanstyu">View My GitHub Profile</a></p>
         <p className="view"><a href="https://jonathanstyu.github.io">I Write a Blog</a></p>
-        <p className="view"><a href="../jonathan yu resume.pdf">View My Resume (PDF)</a></p>
+        <p className="view"><a href="./jonathan yu resume.pdf">View My Resume (PDF)</a></p>
       </header>
     )
   }

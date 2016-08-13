@@ -23284,7 +23284,7 @@
 	          { className: 'view' },
 	          _react2.default.createElement(
 	            'a',
-	            { href: '../jonathan yu resume.pdf' },
+	            { href: './jonathan yu resume.pdf' },
 	            'View My Resume (PDF)'
 	          )
 	        )
@@ -23432,7 +23432,10 @@
 	  "category": "Side Project - iOS",
 	  "url": "https://itunes.apple.com/us/app/collegescan-college-scorecard/id1087108329",
 	  "repo": "https://github.com/jonathanstyu/collegeScan",
+<<<<<<< 99a5e821163c736a77416d6f8f693fc742e041a4
 	  "blogPost": "http://jonathanstyu.github.io/introducing-collegescan",
+=======
+>>>>>>> Update to get gh pages working
 	  "img": "./images/cs-icon.png",
 	  "role": "Creator",
 	  "summary": "A way to browse, search, and star colleges using the US College Scorecard API",
